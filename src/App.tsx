@@ -7,8 +7,8 @@ function App() {
   return (
     <Container>
       <Content>
-        <Button/>
         <Input/>
+        <Button/>
       </Content>
     </Container>
 
