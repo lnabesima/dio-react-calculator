@@ -1,10 +1,13 @@
 import { JSX } from 'react';
 import { InputContainer } from './styles.ts';
 
-export const Input = (): JSX.Element => {
+interface InputProps{
+  value: string
+}
+export const Input = ({value}:InputProps): JSX.Element => {
   return (
     <InputContainer>
-      <input type={"text"}/>
+      <input type={"text"} disabled value={value}/>
     </InputContainer>
   );
 };
